@@ -14,11 +14,9 @@ def recursive_dict_value(dict, index, num_loops, start_index):
             return 1
         else:
             return 0
-
     # continue recursing until we reach the end of the dictionary or find a match
     else:
         num_loops += 1
-        
         return recursive_dict_value(dict, value, num_loops, start_index)
 
 successes_list = []
