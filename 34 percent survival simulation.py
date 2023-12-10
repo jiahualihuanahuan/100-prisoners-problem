@@ -4,7 +4,7 @@ from statistics import mean
 # create a function to get the value of a given index/key from an existing dictionary
 def recursive_dict_value(dict, index, num_loops, start_index):
     # base case: if we've reached the end of the dictionary, return None
-    if index >= len(dict):
+    if index > len(dict):
         return None
     value = dict[index]
 #     print(f"found {value} at index {index}")
